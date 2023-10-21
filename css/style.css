@@ -60,7 +60,7 @@ img {
   padding: 35px 50px;
   position: relative;
   background: linear-gradient(
-    175deg,
+    318deg,
     rgb(91, 134, 249) 0%,
     rgb(119, 192, 237) 45%,
     rgb(10, 39, 139) 97%
@@ -92,6 +92,7 @@ img {
 .weather-temp .active {
   color: rgb(255, 255, 255);
   cursor: default;
+  font-size: 20px;
 }
 
 .specification {
@@ -106,10 +107,6 @@ img {
 }
 
 #celsius-link {
-  text-decoration: none;
-}
-
-#fahrenheit-link {
   text-decoration: none;
 }
 
