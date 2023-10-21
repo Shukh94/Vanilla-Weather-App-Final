@@ -31,7 +31,7 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <form class="search-form mb-3" id="search-form">
+          <form class="search-form mb-5" id="search-form">
             <div class="row">
               <div class="col-9">
                 <input
@@ -48,19 +48,23 @@
                 <input
                   type="submit"
                   value="Search"
-                  class="form-control btn btn-primary shadow-sm"
+                  class="form-control btn shadow-sm"
                 />
               </div>
             </div>
           </form>
-          <div class="overview">
-            <h1 id="city"></h1>
-            <ul>
-              <li>Last updated: <span id="date"></span></li>
-              <li id="description"></li>
-            </ul>
-          </div>
-          <div class="row">
+          <div class="row overview-row mb-3">
+            <div class="col-6">
+              <div class="city">
+                <h1 id="city"></h1>
+              </div>
+              <div class="overview">
+                <ul>
+                  <li>Last updated: <span id="date"></span></li>
+                  <li id="description"></li>
+                </ul>
+              </div>
+            </div>
             <div class="col-6">
               <div class="d-flex weather-temp">
                 <div class="float-left">
@@ -76,6 +80,8 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="row specification-row mb-3">
             <div class="col-6 specification">
               <ul>
                 <li>Humidity: <span id="humidity"></span>%</li>
@@ -83,7 +89,11 @@
               </ul>
             </div>
           </div>
-          <div class="weather-forecast" id="forecast"></div>
+          <div class="row forecast-row mb-3">
+            <div class="col-12">
+              <div class="weather-forecast" id="forecast"></div>
+            </div>
+          </div>
         </div>
         <small>
           <a

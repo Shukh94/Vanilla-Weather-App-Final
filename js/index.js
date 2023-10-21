@@ -27,14 +27,14 @@ function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
 
-  let forecastHtml = `<div class="row">`;
+  let forecastHtml = `<div class="row d-flex justify-content-center">`;
 
   forecast.forEach(function (forecastDay, index) {
     if (index < 6) {
       forecastHtml =
         forecastHtml +
         `
-                <div class="col-2">
+                <div class="col-2 forecast-col">
                   <div class="weather-forecast-date">${formatDay(
                     forecastDay.dt
                   )}</div>
