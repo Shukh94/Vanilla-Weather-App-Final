@@ -3,12 +3,18 @@ body {
 }
 
 .btn {
+  color: #154291;
   background: linear-gradient(
     118deg,
     rgb(116 154 255) 0%,
     rgb(163 217 250) 45%,
     rgb(184 228 255) 97%
   );
+}
+
+.btn:hover {
+  background: #80b7ff;
+  color: #ffffff;
 }
 
 h1 {
